@@ -1,0 +1,381 @@
+body,h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+.navbar-light .navbar-nav .nav-link.active {
+	padding: 1px 13px;
+	font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link.active:hover{
+	color: #fb5849;
+}
+.menu ul li a:hover{
+    color: #fb5849;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin: 0;
+	transition: .4s;
+}
+
+/* Slider Section */
+.slider-left{
+    background: url(./image/top-left-bg.jpg);
+    padding: 200px 0;
+}
+.slider-left h1 {
+	font-family: 'Allura', cursive;
+	font-size: 60px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.slider-left p {
+	letter-spacing: 3px;
+	padding-bottom: 12px;
+	font-weight: 500;
+}
+.slider-left button{
+    color: #fb5849;
+    font-size: 14px;
+    font-weight: 600;
+}
+.slider-right img {
+	height: 562px;
+}
+.slider-right span i{
+}
+
+/* About Section */
+.about-left{
+	position: relative;
+}
+.about-left h6 {
+	margin-left: 48px;
+	color: #fb5849;
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 23px;
+	letter-spacing: 2px;
+}
+.about-left h6::after{
+	content: "";
+	height: 1px;
+	width: 34px;
+	background: #fb5849;
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.about-left h2 {
+	font-weight: 800;
+}
+.about-left p {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+}
+.about-left p a{
+	text-decoration: none;
+}
+
+.about-right {
+	background: url(./image/about-video-bg.jpg) no-repeat;
+	background-size: cover;
+	padding: 245px 0;
+}
+.about-right span {
+	border-radius: 50%;
+	background: #fb5849;
+	color: #fff;
+	padding: 24px 28px;
+}
+
+/* Food Section */
+.food-title h6 {
+	margin-left: 48px;
+	color: #fb5849;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 23px;
+	letter-spacing: 2px;
+	position: relative;
+}
+.food-title h6::after{
+	content: "";
+	height: 1px;
+	width: 34px;
+	background: #fb5849;
+	position: absolute;
+	top: 8px;
+	left: -45px;
+}
+
+.food-title h2 {
+	font-weight: 800;
+	width: 40%;
+	padding-bottom: 70px;
+}
+
+.food-image img{
+	max-width: 100%;
+	height: 350px;
+}
+.food-image {
+	position: relative;
+	height: 108%;
+}
+.food-price{
+	height: 75px;
+	width: 72px;
+	background: #fb5849;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px 0 0 0;
+	font-weight: 600;
+}
+.food-price h4{
+	margin-top: 23px;
+	font-size: 22px;
+}
+
+.food-image::before{
+	content: "";
+	height: 8%;
+	width: 100%;
+	background: #fb5849;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	border-radius: 0 0 5px 5px;
+}
+.hover-title{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 50%;
+	width: 100%px;
+	background: #fb5849;
+	border-radius: 0 0 5px 5px;
+	box-sizing: border-box;
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+	transform: scaleY(0);
+	transform-origin: bottom center;
+}
+.food-image:hover .hover-title{
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
+}
+.hover-title p{
+	font-size: 14px;
+	color: #fff;
+	line-height: 22px;
+}
+.hover-title h5{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+	padding-top: 6px;
+}
+.food-arrow{
+	margin-top: 78px;
+}
+.food-arrow span {
+	color: #fb5849;
+	font-size: 17px;
+	padding: 10px;
+	opacity: .8;
+}
+/* Cooke Section */
+
+.img{
+	max-width: 100%;
+}
+.cooke-title{
+	width: 30%;
+}
+.cooke-title h6{
+	color: #fb5849;
+	padding: 8px 0;
+	font-weight: 600;
+}
+.cooke-title h2{
+	font-weight: 900;
+}
+.cooke .cards{
+	border: 1px solid #ddd;
+	transition: .5s;
+}
+.cooke .cards:hover{
+	border-color: #fb5849;
+}
+.cooke-image{
+	position: relative;
+}
+.cooke-mene{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 76%;
+	width: 100%;
+	background: rgba(0, 0, 0, .8);
+	opacity: 0;
+	visibility: hidden;
+	transition: .6s;
+}
+.cooke-image:hover .cooke-mene{
+	opacity: 1;
+	visibility: visible;
+}
+.cooke-mene span {
+	margin-top: 45%;
+	display: inline-block;
+	padding: 7px;
+	font-size: 18px;
+	background: #fff;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.cooke-mene span:hover{
+	background: #fb5849;
+}
+.cooke-image:hover h5{
+	color: #fb5849;
+}
+
+.cooke-name h5{
+	font-weight: 600;
+}
+
+/* Contact Section */
+.contact{
+	background: url(./image/reservation-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: 120px 0;
+}
+.contact-left h6 {
+	position: relative;
+	margin-left: 46px;
+}
+.contact-left p{
+	font-size: 15px;
+}
+.contact-left h6::after{
+	content: "";
+	height: 1px;
+	width: 34px;
+	background: #fff;
+	position: absolute;
+	top: 8px;
+	left: -45px;
+}
+.contact-left h3 {
+	font-weight: 600;
+	font-size: 31px;
+}
+.contact-card span {
+	color: #fff;
+	height: 60px;
+	width: 60px;
+	background: #fb5849;
+	display: block;
+	margin: auto;
+	line-height: 60px;
+	border-radius: 50%;
+	padding: 23px -1px !important;
+	position: relative;
+	margin-top: -32px;
+	font-size: 22px;
+}
+.contact-card h5{
+	padding: 7px 0;
+	font-weight: 700;
+}
+.contact-card h6{
+	font-size: 14px;
+}
+.contact-card h6:hover{
+	color: #fb5849;
+}
+.contact-right button{
+	background: #fb5849;
+	color: #fff;
+	font-size: 14px;
+}
+
+/* Testimonial */
+.tesimonilt h6{
+	color: #fb5849;
+	padding: 10px 0;
+	letter-spacing: 2px;
+}
+.tesimonilt h2{
+	width: 70%;
+	margin: auto;
+	font-weight: 700;
+	padding-bottom: 25px;
+}
+.tesimonilt p{
+	color: #fb5849;
+}
+
+/* All-Food Setion */
+.all-food .all-food-text h5{
+	font-weight: 700;
+	margin-top: 6px;
+}
+.all-food .all-food-text p{
+	font-size: 14px;
+	padding-top: 5px;
+	font-weight: 400;
+}
+.all-food .all-food-price {
+	height: 75px;
+	width: 70px;
+	background: #fb5849;
+	margin-top: 6px;
+	border-radius: 3px;
+}
+.all-food .all-food-price h4 {
+	color: #fff;
+	text-align: center;
+	line-height: 75px;
+	font-size: 19px;
+	font-weight: 600;
+}
+
+/* Footer Section */
+footer{
+	background: #fb5849;
+}
+.footer-menu{
+}
+.footer-menu ul{
+	padding-left: 0;
+}
+.footer-menu ul li{
+	display: inline-block;
+	list-style: none;
+}
+.footer-menu ul li a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: #fff;
+	color: #fb5849;
+	padding: 5px 11px;
+	line-height: 32px;
+	font-size: 21px;
+	border-radius: 50%;
+	margin-right: 10px;
+	margin-top: 18px;
+}
